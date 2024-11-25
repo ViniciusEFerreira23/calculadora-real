@@ -1,0 +1,145 @@
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+header{
+    top: 0;
+    background-color: antiquewhite;
+}
+
+@font-face {
+    font-family: titulo;
+    src: url(./menasha_brown/Menasha\ Brown.otf);
+}
+h1{
+    font-family: titulo;
+}
+h1::selection{
+    background-color: grey;
+}
+@font-face {
+    font-family: texto;
+    src: url(./basicaline/Basicaline-NonCommercial.otf);
+}
+p{
+    font-family: texto;
+}
+p::selection{
+    background-color: grey;
+}
+
+#calculadora{
+    max-width: 360px;
+    background-color: rgba(26, 26, 26, 0.133);
+    backdrop-filter: blur(5.5px);
+    box-shadow: 0 8px 30px rgb(25, 25, 25);
+    padding: 20px;
+}
+
+#tema{
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left:0;
+
+}
+
+.videofundo{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.videofundo video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#display{
+    font-size: 22px;
+    text-align: right;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    box-sizing: border-box;
+}
+
+button{
+    width: calc(25% - 12px);
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius:5px;
+    background-color: black;
+    color: white;
+    float: left;
+    transition: 0.2s;
+}
+
+button::selection{
+    background-color: grey;
+}
+
+button:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.operador:hover{
+    background-color: black;
+    color: white;
+}
+
+.operador{
+    background-color: white;
+    color: black;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+}
+
+
+/* modo escuro */
+
+.dark-mode #calculadora{
+    background-color: rgba(248, 248, 248, 0.133);
+    backdrop-filter: blur(5.5px);
+    box-shadow: 0 8px 30px rgb(25, 25, 25);
+}
+
+.dark-mode #display{
+    background-color: black ;
+}
+
+.dark-mode button.operador{
+    background-color: black;
+    color: white;
+}
+
+.dark-mode button{
+    background-color: white;
+    color: black;
+}
