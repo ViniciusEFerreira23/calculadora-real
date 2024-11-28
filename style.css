@@ -158,3 +158,8 @@ footer{
     background-color: black;
     color: white;
 }
+
+.dark-mode footer{
+    background-color: white;
+    color: black;
+}
