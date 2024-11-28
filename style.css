@@ -138,8 +138,23 @@ footer{
     background-color: black;
     color: white;
 }
+.dark-mode button.operador:hover{
+    background-color: rgb(243, 243, 243);
+    color: rgb(0, 0, 0);
+}
+
+.dark-mode .operador:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
 
 .dark-mode button{
     background-color: white;
     color: black;
+}
+
+.dark-mode button:hover{
+    background-color: black;
+    color: white;
 }
