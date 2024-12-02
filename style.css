@@ -163,3 +163,11 @@ footer{
     background-color: white;
     color: black;
 }
+
+/* responsivo */
+
+
+@media (max-width: 720px) {
+    #tema{
+        width: 100%;
+    }
